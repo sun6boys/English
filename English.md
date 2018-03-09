@@ -77,3 +77,88 @@ some多用于肯定句，any多用于否定句、疑问句。
 
 　　
 　　
+## 五、形容词和副词
+### 1) 形容词一般不做状语，如果做状语那肯定是在考试中出现，如果做状语，前面一般有逗号
+
+```
+【例题】Having been praised by the teacher, the little girl ran back home, _____.
+　　A.happily and satisfied
+　　B.eager and excitedly
+　　C.happy and satisfied
+　　D.anxiously and excitedly
+　　
+　　『正确答案』C
+   『答案解析』本题形容词用作状语，表示行为方式或伴随状况，描述小女孩的状态。
+    A答案 前面是副词 and后面是形容词 所以错误
+```
+
+### 2）副词
+
+常考短语 ： can’t（can never） be too ... to do sth 再怎么都不为过
+
+连接副词 however(无论如何；不管怎样,然而；可是,**表示转折，前面一般接分号**) therefor（因此） otherwise（否则，如果不）
+
+
+### 3) 比较级
+注意：来自拉丁语的一些形容词，本身就是比较级，后面要接介词to。这些词是：
+
+重要级 ⭐️⭐️⭐️⭐️⭐️
+
+- prior to 在…之前
+- inferior to 比…要差
+- superior to 比…要好
+- junior to 比…要年少的
+- senior to 比…要年长的
+
+
+同等程度的比较时，通常用句型“as＋原级＋as…”或“not as （so） ＋原级＋as…”。
+
+
+**考试重点**比较级前还可以加上一个表示程度的状语。如：`much`，`far`，`by far`,a lot，，a bit , rather
+
+```
+【例题】I always take it for granted that I am _____ intelligent than she is.
+　　A.very　　　　　　B.too
+　　C.far more　　　　D.far better
+　　
+　　『正确答案』C
+『答案解析』intelligent的比较级是more intelligent，far可以用于修饰比较级，所以C项正确。
+
+```
+
+### 4 )最高级
+`much`，`far`，`by far`,mostly，almost，nearly可以修饰最高级
+
+### 5）表示倍数
+重要级 ⭐️⭐️⭐️⭐️⭐️
+
+表示“几倍于”，用“twice / three times＋as＋原级＋as”或“twice / three times＋比较级＋than”句型。
+
+英语中用比较级句型可以表示最高级的含义，较为常见的有下列两种形式：
+
+（1）在比较句型中使用 no，nobody，nothing，never，few等否定词。
+
+```
+【例题】_____ gives people more knowledge of the society than literature.
+　　A.Anything　　　　B.Nothing
+　　C.Something　　　 D.Everything
+　　
+　　『正确答案』B
+『答案解析』本句用nothing及比较级的形式表达最高级的含义。
+
+```
+
+（2）“比较级＋than＋the other＋复数名词”；“比较级＋than＋any other＋单数名词”；“比较级＋than＋any of the other＋复数名词”；“比较级＋than＋anything / anyone else”。
+
+```
+
+【例题】English is used by more people than _____ language except Chinese.
+　　A.any　　　　　B.any other
+　　C.other　　　　D.all other
+　　
+　　  	『正确答案』B
+『答案解析』“比较级＋than＋any other＋单数名词”可以表达最高级的含义。
+
+为什么不选A 因为英语和其他语言比较，要先把英语剔除掉，英语不能跟自己比较
+　　
+```
