@@ -162,3 +162,35 @@ some多用于肯定句，any多用于否定句、疑问句。
 为什么不选A 因为英语和其他语言比较，要先把英语剔除掉，英语不能跟自己比较
 　　
 ```
+
+
+## 六、情态动词
+
+英语中的情态动词主要有：can/could, may/might, must, ought to, shall/should, will/would, need, dare等。
+
+
+### 2) may he might的用法，
+表示请求、可以与允许的情况，might比may的语气更加委婉。may的否定式为may not，但表示“不可以、禁止”的意思时，用`mustn’t(不可以)`代替may not。
+
+### 3) must和have to的用法
+must表示“必须”，用于肯定句或疑问句。其否定式mustn’t表示“不可以”，疑问句的否定回答常用needn’t(不必)或don’t have to表示“不必”。
+
+### 5)should，ought to和had better
+should，ought to 是应该， had better 是最好，had better后面一般跟动词原形 had better do sth
+
+### 6）would rather意为“宁愿”。由于would rather表示选择，因而后可接than
+　I would rather work on a farm than in a factory.
+
+### 情态动词推测性用法
+must 表示肯定的推测
+
+- must do 表示对现在的推测
+- must have done 表示对过去的推测
+
+can’t/couldn’t表示否定的推测，意思是“不可能”
+
+- can't do 对现在情况的推测
+- can't have done 对过去情况的推测
+
+### 情态动词虚拟语气的用法
+　
