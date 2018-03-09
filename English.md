@@ -193,4 +193,10 @@ can’t/couldn’t表示否定的推测，意思是“不可能”
 - can't have done 对过去情况的推测
 
 ### 情态动词虚拟语气的用法
+
+1 .should + have +done和ought to + have +done 意思都是“早该，本应当”，表示应该做某事，而事实上并没有做，含有对过去动作的责备、批评。
+
+2.could + have +done意为“本能够”，表示本能够做某事，而实际上并未做，含有对过去能做而未做的事情感到惋惜、遗憾。
+
+3.needn’t +have +done意为“本没有必要”，表示本来不必做某事而实际上却做了。相当于“didn’t need to do”或者“didn’t have to do”，译为“其实本没必要……”。
 　
