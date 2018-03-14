@@ -200,3 +200,99 @@ can’t/couldn’t表示否定的推测，意思是“不可能”
 
 3.needn’t +have +done意为“本没有必要”，表示本来不必做某事而实际上却做了。相当于“didn’t need to do”或者“didn’t have to do”，译为“其实本没必要……”。
 　
+## 七、动词的时态
+
+
+### 一般现在时
+
+1）构成：主要由动词原形构成，但第三人称单数后动词要在词尾加-s。
+
+【例句】He usually gets up at 7.
+
+**重要！！！**表示永恒的客观规律或真理，即使出现在过去的语境中，仍用一般现在时。
+
+**重要！！！**在时间或条件状语从句中，用一般现在时态代替一般将来时。
+
+时间：when, until, after, before, as soon as, once, the moment/the minute；
+条件：if, unless, provided。
+
+```
+　　【例1】Mr.Smith is coming to visit us soon.We'd better get everything ready before he _____.
+　　A.arrives　　　　　B.arrive
+　　C.will arrive　　　D.arrived
+　　
+　　『正确答案』A
+『答案解析』在时间或条件状语从句中，用一般现在时态代替一般将来时。本题即为这种用法。
+
+```
+
+### 一般过去时
+
+在时间和条件状语从句中表示过去将来的动作。
+
+【例句】He said he wouldn’t go with us if it rained.
+**这个要和上面的条件状语用一般现在时区分，如果有条件状语，一般现在时只能代替一般将来时，而非过去时**
+
+### 一般将来时
+
+
+### 现在进行时
+
+**重要重要！！！！**表示按照计划即将发生的动作，仅限于少数动词：arrive, come, go, have, leave, return, stay等，并常带有表示将来的时间状语。
+
+【例句】He is leaving for London next week.下周他将去伦敦
+
+
+### 过去进行
+was / were doing
+
+### 一般将来进行时
+构成：由助动词shall/will加上be + doing构成。
+
+【例句】I’ll be doing my homework this time tomorrow.
+
+
+### 现在完成时
+
+1）构成：由助动词have, has加上过去分词构成。
+
+（1）表示过去发生的某一动作对现在造成的影响或结果。常与already, yet, not…yet, now, just, by this time等状语连用。
+
+```
+【例题】Last week I wrote to the hotel to book a room, but they _____ yet.　
+　　A.didn't answer　　　　B.wasn't answering
+　　C.hadn't answered　　　D.haven't answered
+　　
+　　『正确答案』D
+『答案解析』本题需要表示他们到现在还没有回应的意思，因此用现在完成时。
+```
+
+（2）表示开始于过去，持续到现在，而且还可能继续下去的动作或状态，常同表示一段时间的状语连用，如：today, now, this week / morning / month / year, lately, recently, so far, up to now, up to present, these days, in the past few days, during the last two weeks等, 也同“for＋时间段”或“since＋短语（或从句）”的状语连用。
+
+比如 I hava stayed here for ten years.
+
+现在完成时不能接瞬间动词，需要接持续性动词
+
+错：She has left home for a month.
+
+对：She has been away from home for a month.
+
+
+### 过去完成时
+
+1）构成：由助动词had加动词的过去分词构成。
+
+第8讲 可以再看看，画时间轴，如果持续到过去某个时间久用过去完成时
+
+
+### 将来完成时
+
+1）构成：由助动词shall, will＋have＋动词的过去分词构成。
+
+### 现在完成进行时
+
+1）构成：由have, has＋been＋动词的现在分词构成。
+
+### 将来完成进行
+
+1）构成：由助动词shall, will + have been doing构成。
