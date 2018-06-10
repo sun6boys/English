@@ -30,10 +30,10 @@
 
 - #pragma mark - life cycle
 - #pragma mark - public methods
+- #pragma mark - private methods
+- #pragma mark - event response
 - #pragma mark - [系统控件的Protocol]
 - #pragma mark - [自定义控件的Protocol]
-- #pragma mark - event response
-- #pragma mark - private methods
 - #pragma mark - getters and setters
 
 其中，`[系统控件的Delegate]` 和 `[自定义控件的Delegate]` 需要替换成对应的真实Delegate名字。这样在Xcode中按住command键点击对应的pragma，就能跳转到Delegate的定义处。
@@ -44,9 +44,7 @@
 2. 禁止引用不使用的头文件
 3. 第三方Pod的头文件引用全部用`<>`
 
-```
-#import <AFNetworking/AFNetworking.h>
-```
+![](importScreenShoot.jpg)
 
 ## 1.2 命名规范
 ### 1.2.1 变量名、函数名
@@ -151,7 +149,7 @@ PAAPIErrorTypeTimeout
 
 文件目录结构样例：
 
-![](images/XCodeGroupScreenshot.jpg)
+![](XCodeGroupScreenshot.jpg)
 
 ### 1.3.1 每一个Group都有对应的文件夹
 
@@ -232,6 +230,32 @@ if (foo) {
     ...
 }
 ```
+
+### 1.4.4 用换行分隔意群
+
+有的时候一个函数里面代码量比较大，但是这部分代码量又没有大到必须拆成多个函数的情况，就需要使用换行去分隔意群。所谓意群就是做同一件事情的几行代码。
+
+在大函数中，应该尽可能把做同一件事情的几行代码写在一起，然后作为一个意群，用空行分隔开。
+
+![](yiqun.jpg)
+![](yiqun2.jpg)
+
+## 1.5 注释规范(最终目的)
+
+我们的注释规范就是尽最大可能把代码写好，然后不写注释！
+
+> 在好的代码和设计中，不需要写注释、写文档
+
+1. 代码就是最好的文档（头文件、实现文件）
+2. 尝试把你的注释全部删掉，把代码设计成不用注释也能够看懂的样子（命名、流程设计）
+3. 函数名长点儿没关系，表意清楚最重要
+
+> 在好的工程中，不允许有被注释的代码
+
+1. 通过版本管理操作来消灭调试开发过程中的注释代码
+2. 手脚干净地调试项目，调试完后及时删除，不拖泥带水提交注释代码入库
+
+
 
 
 

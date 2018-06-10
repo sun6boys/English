@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>平安好房iOS代码规范</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">平安好房iOS代码规范</h1>
+
+<ul>
+<li><p>使用驼峰命名</p></li>
+<li><p>不允许直接声明和使用实例变量，应当使用属性变量</p></li>
+</ul>
+
+<div><pre><code class="language-none">错误：
+
+@interface object{
+    NSString *_name;
+}
+@end
+
+正确：
+
+@interface object
+
+@property (nonatomic, strong) NSString *name;
+
+@end
+</code></pre></div>
+
+<h2 id="toc_1">1.1 UIViewController</h2>
+
+<h3 id="toc_2">1.1.1 统一代码布局</h3>
+
+<p>严格按照以下顺序组织viewController中的代码：</p>
+
+<ul>
+<li>#pragma mark - life cycle</li>
+<li>#pragma mark - public methods</li>
+<li>#pragma mark - private methods</li>
+<li>#pragma mark - event response</li>
+<li>#pragma mark - [系统控件的Protocol]</li>
+<li>#pragma mark - [自定义控件的Protocol]</li>
+<li>#pragma mark - getters and setters</li>
+</ul>
+
+<p>其中，<code>[系统控件的Delegate]</code> 和 <code>[自定义控件的Delegate]</code> 需要替换成对应的真实Delegate名字。这样在Xcode中按住command键点击对应的pragma，就能跳转到Delegate的定义处。</p>
+
+<h3 id="toc_3">1.1.2 管理好头文件引用</h3>
+
+<ol>
+<li>通过换行来将引用的头文件归类(比如UI相关的、功能相关的、第三方)</li>
+<li>禁止引用不使用的头文件</li>
+<li>第三方Pod的头文件引用全部用<code>&lt;&gt;</code></li>
+</ol>
+
+<p><img src="importScreenShoot.jpg" alt=""></p>
+
+<h2 id="toc_4">1.2 命名规范</h2>
+
+<h3 id="toc_5">1.2.1 变量名、函数名</h3>
+
+<h4 id="toc_6">1.2.1.1 变量名</h4>
+
+<ul>
+<li>使用驼峰命名法</li>
+<li>不用知道上下文，光看变量名就能知道这个变量是干什么的</li>
+<li>不用知道上下文，光看变量名就能知道这个变量是什么类型
+
+<ul>
+<li>UIView系列的全部以View结尾</li>
+<li>UIButton系列的全部以Button结尾</li>
+<li>UIGestureRecognizer系列的全部以Recognizer结尾</li>
+<li>UIViewController系列的全部以ViewController结尾</li>
+<li>以此类推</li>
+</ul></li>
+</ul>
+
+<h4 id="toc_7">1.2.1.2 函数名</h4>
+
+<ul>
+<li>不用知道上下文，光看函数名就能知道这个函数是干什么的</li>
+<li>不用知道上下文，光看函数名就能知道这个函数会在什么时候被调用</li>
+<li>-/+ [空格] [返回类型] [函数名]</li>
+</ul>
+
+<div><pre><code class="language-none">错误：
+-(void)functionName;
+-(void) functionName;
+- (void) functionName;
+
+正确：
+- (void)functionName;</code></pre></div>
+
+<h3 id="toc_8">1.2.2 Notification名</h3>
+
+<ul>
+<li>k + 发送者名 + 事件名 + Notification</li>
+</ul>
+
+<div><pre><code class="language-none">k UIApplication WillTerminate Notification
+k BLLoginManager DidLoggedIn Notification</code></pre></div>
+
+<h3 id="toc_9">1.2.3 Delegate函数名</h3>
+
+<p>delegate方法四要素：</p>
+
+<ol>
+<li>返回类型</li>
+<li>自己</li>
+<li>事件</li>
+<li>反馈参数</li>
+</ol>
+
+<div><pre><code class="language-none">- (void)manager:(XXManager *)manager didFailedWithErrorCode:(NSString)errorCode errorMessage:(NSString *)errorMessage;
+
+- (void)managerTaskDidFinished:(XXManager *)manager;</code></pre></div>
+
+<p>delegate方法第一个参数永远都应该是自己。</p>
+
+<h3 id="toc_10">1.2.4 enum/option名</h3>
+
+<p><code>enum/option类型名：</code></p>
+
+<p>类名 + XXX Type/Style</p>
+
+<div><pre><code class="language-none">PAAPIErrorType</code></pre></div>
+
+<p><code>enum/option 值名：</code></p>
+
+<p>enum/option类型名 + 具体的内容</p>
+
+<div><pre><code class="language-none">PAAPIErrorTypeNoContent
+PAAPIErrorTypeParamsError
+PAAPIErrorTypeTimeout</code></pre></div>
+
+<h3 id="toc_11">1.2.5 事件响应函数名</h3>
+
+<h4 id="toc_12">1.2.5.1 Notification响应函数名</h4>
+
+<p>统一使用<code>didReceive</code>开头，后面跟Notification的名字。</p>
+
+<div><pre><code class="language-none">- (void)didReceive[Notification名]:(NSNotification *)notification;</code></pre></div>
+
+<h4 id="toc_13">1.2.5.2 UIButton响应函数名</h4>
+
+<p>统一使用<code>didTapped</code>开头，后面跟Button的名字。</p>
+
+<div><pre><code class="language-none">- (void)didTapped[Button名]:(UIButton *)button;</code></pre></div>
+
+<h4 id="toc_14">1.2.5.3 UIGestureRecognizer响应函数名</h4>
+
+<p>统一使用<code>didRecognized</code>开头，后面跟recognizer的名字。recognizer的名字需要体现出具体的手势，例如滑动手势就应该命名为<code>[页面名]SwipeGestureRecognizer</code></p>
+
+<div><pre><code class="language-none">- (void)didRecognized[GestureRecognizer名]:(UIGestureRecognizer *)recognizer;</code></pre></div>
+
+<h2 id="toc_15">1.3 文件目录结构规范</h2>
+
+<p>文件目录结构样例：</p>
+
+<p><img src="XCodeGroupScreenshot.jpg" alt=""></p>
+
+<h3 id="toc_16">1.3.1 每一个Group都有对应的文件夹</h3>
+
+<p>Group需要和文件路径上一致，这样子便于代码文件的迁移。同时，在项目工程中也比较容易定位。</p>
+
+<h3 id="toc_17">1.3.2 目录层级关系可以表达调用关系或依赖关系</h3>
+
+<p>这么做便于了解某一个对象或者模块，都需要哪些辅助文件。也便于后续做代码复用和拆分。</p>
+
+<h3 id="toc_18">1.3.3 单个文件夹下最多只能有一个对象的源文件</h3>
+
+<p>这一个对象必定是这个目录下的主要对象，这样才能使得文件结构主次分明。</p>
+
+<h2 id="toc_19">1.4 符号使用规范</h2>
+
+<h3 id="toc_20">1.4.1 运算符号两边都要有空格</h3>
+
+<div><pre><code class="language-none">错误：
+a+b
+a?b:c
+
+正确：
+a + b
+a ? b : c
+</code></pre></div>
+
+<h3 id="toc_21">1.4.2 使用()来表达优先级</h3>
+
+<div><pre><code class="language-none">错误：
+a || !b &amp;&amp; c
+
+正确：
+( a || b ) &amp;&amp; ( c || d )</code></pre></div>
+
+<h3 id="toc_22">1.4.3 {}的使用规范</h3>
+
+<p>函数中<code>{}</code>换行</p>
+
+<div><pre><code class="language-none">错误：
+- (void)foo {
+    ...
+}
+
+正确：
+- (void)foo
+{
+    ...
+}</code></pre></div>
+
+<p>if-else中<code>{}</code>不换行，else中的<code>{}</code>不换行：</p>
+
+<div><pre><code class="language-none">错误：
+if (foo)
+{
+    ...
+}
+else
+{
+    ...
+}
+
+if (foo) {
+    ...
+}else{
+    ...
+}
+
+正确：
+if (foo) {
+    ...
+} else {
+    ...
+}</code></pre></div>
+
+<h3 id="toc_23">1.4.4 用换行分隔意群</h3>
+
+<p>有的时候一个函数里面代码量比较大，但是这部分代码量又没有大到必须拆成多个函数的情况，就需要使用换行去分隔意群。所谓意群就是做同一件事情的几行代码。</p>
+
+<p>在大函数中，应该尽可能把做同一件事情的几行代码写在一起，然后作为一个意群，用空行分隔开。</p>
+
+<p><img src="yiqun.jpg" alt="">
+<img src="yiqun2.jpg" alt=""></p>
+
+<h2 id="toc_24">1.5 注释规范(最终目的)</h2>
+
+<p>我们的注释规范就是尽最大可能把代码写好，然后不写注释！</p>
+
+<blockquote>
+<p>在好的代码和设计中，不需要写注释、写文档</p>
+</blockquote>
+
+<ol>
+<li>代码就是最好的文档（头文件、实现文件）</li>
+<li>尝试把你的注释全部删掉，把代码设计成不用注释也能够看懂的样子（命名、流程设计）</li>
+<li>函数名长点儿没关系，表意清楚最重要</li>
+</ol>
+
+<blockquote>
+<p>在好的工程中，不允许有被注释的代码</p>
+</blockquote>
+
+<ol>
+<li>通过版本管理操作来消灭调试开发过程中的注释代码</li>
+<li>手脚干净地调试项目，调试完后及时删除，不拖泥带水提交注释代码入库</li>
+</ol>
+
+
+
+
+</body>
+
+</html>
